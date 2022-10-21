@@ -1,0 +1,154 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+
+body{
+    font-family: myFirstFont;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.container{
+  width: 1140px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36.11px;
+  font-size: 14px;
+  margin-left: 0px;
+  margin-top: 39.1px;
+  margin-bottom: 38px;
+}
+
+.present{
+  height: 840px;
+  width: 100%;
+  background-image: url(./imeg/helimain.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+ 
+}
+
+.present-text{
+  color: white;
+  font-size: 40px;
+  margin-left: 0px;
+  
+}
+
+.present-Rectangle{
+  background-image: url(./imeg/Rectangle\ 6.2.png);
+  width: 224px;
+  height: 96px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+  gap: 17px;
+  margin: 29px 0px;
+ 
+}
+
+.present-text-price{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.present-text-price div:nth-child(1){
+ color: white;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 30.23px;
+ padding: 0px;
+}
+
+.present-text-price div:nth-child(2){
+  color: white;
+  font-weight:800;
+  font-size: 35px;
+  line-height: 52.9px;
+  padding: 0px;
+ }
+ .present-text-procent{
+  color: white;
+  font-size: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0px 7px;
+}
+
+.present-button{
+  color:white;
+  font-size: 18px;
+  background-color: transparent;
+  border-style: none;
+  border: 2px solid white;
+  width:304px;
+  height: 68px;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+
+.photosession{
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
+  margin-top: 70px;
+}
+
+.photosession-text-1{
+  color:#37373F;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48.76px;
+  margin-bottom: 18px;
+}
+
+.photosession-text-2{
+  color:#37373F;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.33px;
+  margin-bottom: 29px;
+ }
+
+ .photosession-icon-position{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  
+ }
+
+ .photosession-icon-text{
+  color:#37373F;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.48px;
+  
+ }
+
+.asdf{
+  color:black;
+  font-size: 40px;
+}
+
+ .photosession-imeg{
+  width: 554px;
+  height: 374px;
+  border-radius: 4px;
+ }
