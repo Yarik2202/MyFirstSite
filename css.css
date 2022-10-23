@@ -17,13 +17,15 @@ body{
 
 header{
   display: flex;
-  padding: 39.15px 0px 38px 0px; ;
-  gap: 36.11px;
+  flex-direction: row;
+  align-items: center;
+  height: 77px;
+  gap: 36px;
 }
 
-.header-imeg{
-  width:128.4px;
-  height:22.85px;
+header imeg{
+  width:128px;
+  height:22px;
 }
 
 .header-text{
@@ -78,7 +80,7 @@ header{
  color: white;
  font-weight: 400;
  font-size: 20px;
- line-height: 30.23px;
+ line-height: 30px;
  padding: 0px;
 }
 
@@ -86,7 +88,7 @@ header{
   color: white;
   font-weight:800;
   font-size: 35px;
-  line-height: 52.9px;
+  line-height: 52px;
   padding: 0px;
  }
  .present-text-procent{
@@ -125,7 +127,7 @@ header{
   color:#37373F;
   font-size: 40px;
   font-weight: 500;
-  line-height: 48.76px;
+  line-height: 48px;
   margin-bottom: 18px;
 }
 
@@ -133,7 +135,7 @@ header{
   color:#37373F;
   font-size: 18px;
   font-weight: 400;
-  line-height: 26.33px;
+  line-height: 26px;
   margin-bottom: 29px;
  }
 
@@ -150,7 +152,7 @@ header{
   color:#37373F;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20.48px;
+  line-height: 20px;
   
  }
 
@@ -176,7 +178,7 @@ header{
   color: #37373F;
   font-size: 20px;
   font-weight: 500;
-  line-height: 29.26px;
+  line-height: 29px;
   margin-top: 30px;
   margin-bottom: 37px;
 
@@ -185,14 +187,14 @@ header{
 .photo-button-div{
   display: flex;
   justify-content: center;
-  margin-top: 44.33px;
+  margin-top: 44px;
 }
 
  .photo-button{
   color:#5286EC;
   font-size: 17px;
   font-weight: 500;
-  line-height: 24.87px;
+  line-height: 24px;
   background-color: transparent;
   border-style: none;
   width:188px;
@@ -200,14 +202,53 @@ header{
   cursor: pointer;
  }
 
+ .organaz{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+ }
+
+ .organaz-text{
+  width: 584px;
+ }
+
+ .organaz-imeges{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 47px;
+ }
+
+ .organaz-imeges-text{
+  text-align: center;
+ }
+
+ .organaz-imeges-button{
+  color:#5286EC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  background-color: transparent;
+  border-style: none;
+  width:290px;
+  height: 43px;
+  cursor: pointer;
+ }
+
+ .organaz-imeges-icon{
+  position: relative;
+  right: 70px;
+  bottom: 100px;
+ }
+
  @media screen and (max-width: 1100px){
   .header-imeg{
-    width:64.2px;
-    height:11.43px;
+    width:64px;
+    height:11px;
     
   }
   .container{
-    width: auto;
     gap: 80px;
   }
 
@@ -219,7 +260,15 @@ header{
 
   .header{
     display: flex;
-    padding: 19.15px 0px 19px 0px; ;
-    gap: 36.11px;
+    height: auto;
+    gap: 36px;
   }
+
+  .photosession{
+    display: flex;
+    flex-direction:column;
+    gap: auto;
+    margin-top: 20px;
+  }
+  
  }
