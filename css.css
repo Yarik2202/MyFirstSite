@@ -11,18 +11,30 @@ body{
 }
 
 .container{
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
 }
 
 header{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 36.11px;
+  justify-content:flex-start;
+  flex-flow: row wrap;
+  height: 77px;
+  
+}
+
+header imeg{
+  width:128px;
+  height:22px;
+}
+
+.header-text{
+  display: flex;
+  flex-direction: row;
   font-size: 14px;
-  margin-left: 0px;
-  margin-top: 39.1px;
-  margin-bottom: 38px;
+  padding-left:36px;
 }
 
 .present{
@@ -71,7 +83,7 @@ header{
  color: white;
  font-weight: 400;
  font-size: 20px;
- line-height: 30.23px;
+ line-height: 30px;
  padding: 0px;
 }
 
@@ -79,7 +91,7 @@ header{
   color: white;
   font-weight:800;
   font-size: 35px;
-  line-height: 52.9px;
+  line-height: 52px;
   padding: 0px;
  }
  .present-text-procent{
@@ -106,8 +118,9 @@ header{
 .photosession{
   display: flex;
   flex-direction: row;
-  gap: 140px;
   margin-top: 70px;
+  justify-content:space-between;
+  flex-flow: row wrap;
 }
 
 .photosession-position-width{
@@ -118,7 +131,7 @@ header{
   color:#37373F;
   font-size: 40px;
   font-weight: 500;
-  line-height: 48.76px;
+  line-height: 48px;
   margin-bottom: 18px;
 }
 
@@ -126,8 +139,13 @@ header{
   color:#37373F;
   font-size: 18px;
   font-weight: 400;
-  line-height: 26.33px;
+  line-height: 26px;
   margin-bottom: 29px;
+ }
+
+ .photosession-icon-star{
+  width: 118px; 
+  height:17px;
  }
 
  .photosession-icon-position{
@@ -143,7 +161,7 @@ header{
   color:#37373F;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20.48px;
+  line-height: 20px;
   
  }
 
@@ -157,19 +175,21 @@ header{
   border-top: 1px solid #C7C7C7;
   border-bottom: 1px solid #C7C7C7;
   padding: 32px 0px;
-  margin-right: -100px;
- }
+  }
 
  .photo{
   border-bottom: 1px solid #C7C7C7 ;
   padding-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
  }
 
  .photo-text{
   color: #37373F;
   font-size: 20px;
   font-weight: 500;
-  line-height: 29.26px;
+  line-height: 29px;
   margin-top: 30px;
   margin-bottom: 37px;
 
@@ -178,16 +198,277 @@ header{
 .photo-button-div{
   display: flex;
   justify-content: center;
+  margin-top: 44px;
 }
 
  .photo-button{
   color:#5286EC;
   font-size: 17px;
   font-weight: 500;
-  line-height: 24.87px;
+  line-height: 24px;
   background-color: transparent;
   border-style: none;
   width:188px;
   height: 19px;
   cursor: pointer;
+ }
+
+ .organaz{
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  border-bottom: 1px solid #C7C7C7 ;
+  padding-bottom:51px;
+  justify-content:flex-start;
+ }
+
+ .organaz-text{
+  width: 50%;
+  color: #37373F;
+  font-size: 16px;
+  padding-top: 37px;
+ }
+
+ .organaz-imeges{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 68px 0px 0px 47px;
+}
+
+ .organaz-text-button{
+  color:#5286EC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  background-color: transparent;
+  border-style: none;
+  width:126px;
+  height: 19px;
+  cursor: pointer;
+ }
+
+ .what-i-present{
+  margin-top:40px;
+ }
+
+ .organaz-imeges-text{
+  text-align: center;
+ }
+
+ .organaz-imeges-button{
+  color:#5286EC;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  background-color: transparent;
+  border-style: none;
+  width:290px;
+  height: 43px;
+  cursor: pointer;
+  margin-top: 10px;
+ }
+
+ .organaz-imeges-icon{
+  position: relative;
+  right: 70px;
+  bottom: 100px;
+ }
+
+ .available-time{
+  width: 67%;
+  height: 485px;
+  margin-top: 50px;
+  border: 1px solid #C7C7C7;
+  
+ }
+
+ .available-time-text{
+  font-size: 20px;
+  margin: 50px 0px 30px 0px;
+ }
+
+ .available-time-date div:nth-child(1){
+  padding-left: 30px;
+ }
+ 
+ .available-time-date{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  height: 74px;
+  border-bottom: 1px solid #C7C7C7;
+ }
+
+ .available-time-date-button{
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  border-style: none;
+ }
+
+ .available-time-hour-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 397px;
+  border-bottom: 1px solid #C7C7C7;
+  height: 130px;
+ }
+
+ .available-time-hour-button{
+  color:orange;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  background-color: transparent;
+  border: 1px solid orange;
+  border-radius: 3px;
+  width:129px;
+  height: 50px;
+  cursor: pointer;
+ }
+
+ .available-time-hour-1 div{
+  padding-left: 30px;
+ }
+
+ .available-time-hour-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 397px;
+  height: 130px;
+ }
+
+ .available-time-hour-2 div{
+  padding-left: 30px;
+ }
+
+ .available-time-last-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 72px 0px 48px 30px;
+  gap: 13px;
+}
+
+.map{
+  width: 100%;
+  height: 509px;
+  margin-top: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 131px;
+}
+
+.coments-user{
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.coments-text-width{
+  width: 50%;
+  border-bottom: 1px solid #C7C7C7;
+}
+
+.coments-name{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.coments-profession{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.coments-star{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+  
+}
+
+.coments-text-shadow{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color:#B3B3B3;
+}
+
+.coments-text-date{
+  margin-bottom: 35px;
+}
+
+.coments-text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#37373F;
+  margin-bottom: 22px;
+}
+
+.coments-button{
+  margin: 47px 0px;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  gap: 671px;
+  height: 100px;
+
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.social-icons-button{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  border-style:none ;
+}
+
+footer{
+  background-color: #FAF9F8;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.fotter-content-position{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 285px;
+}
+
+.footer-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 77px;
+}
+
+
+ @media screen and (max-width: 1100px){
+
  }
